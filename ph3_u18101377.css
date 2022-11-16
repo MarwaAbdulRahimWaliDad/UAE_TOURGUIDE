@@ -1,0 +1,24 @@
+.Ajman{
+    text-align: center;
+    font-family: "toluna", monospace,serif;
+}
+
+.Ajman h2{
+  text-align: center;
+    font-weight: bold;
+    color: #2a3325;
+    font-size: 40px;
+}
+
+.char{
+  text-align: center;
+    background-color: #e7f2e6;
+    margin: auto;
+    width: 30%;
+  }
+  .Ajman h3{
+    text-align: center;
+    font-weight: bold;
+    color: #2a3325;
+    font-size: 40px;
+  }
