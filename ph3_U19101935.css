@@ -1,0 +1,33 @@
+.about-section{
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.about-section h1{
+    font-weight: bold;
+    color: green;
+    font-size: 40px;
+}
+
+.char{
+    background-color: #d2e7d1;
+    margin: auto;
+    width: 30%;
+}
+
+.signup{
+    background-color: white;
+    margin: auto;
+    width: 40%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.signup h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color:green;
+}
+
+
+
+
