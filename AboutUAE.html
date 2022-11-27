@@ -50,7 +50,22 @@
 <P>
 National Flag: Three equal horizontal lines with green at the top, white in the middle and black at the base. There is also a wider vertical red ribbon in the direction of the flagpole.</P>
 
-<img src="Images/UAE.jpg" alt="UAE.com" width="104" height="142">
+
+<img id="Img" src="Images/UAE.jpg" alt="UAE.com" width="104" height="142">
+
+<p>Click the button to get the URL of the image.</p>
+
+<button onclick="myFunction()">Click</button>
+
+<p id="i"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("Img").src;
+  document.getElementById("i").innerHTML = x;
+}
+</script>
+
 
 </div>
 
