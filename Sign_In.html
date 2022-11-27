@@ -1,62 +1,103 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Sign In</title>
+        <meta charset="utf-8">
+        <title>Sign In</title>
+        <link rel="stylesheet" type="text/css" href="ph3_U19104171_css.css">
+        <script src="ph3_U19104171.js"></script>
+
+        <style type="text/css">
+        h2 {
+                text-align: center;
+                font-family: Tahoma, Geneva, sans-serif;
+                color:green;
+        }
+
+        button {
+                text-align: center;
+        }
+        textarea    { width: 300px; height: 100px; }
+        label.fixed { width: 4em; float: left; }
+        #helpText   { font-family: sans-serif; color: blue; margin-top: 10px; }
+        p           { margin: 0; }
+
+        </style>
+
 
 </head>
-
 <body>
 
-<div id="ToolBar">
-            <p><a href="Home,html"><img src="Images/logo.JPG" alt="logo" width="30" height= "30"/></a>
-            <a href="Home.html">UAE Guide</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;En&emsp;
-            <a href="Sign_Up.html">Sign Up</a>&emsp;<a href="Sign_In.html">Sign In</a>
-            &emsp;<a href="Help.html"><img src="Images/icons8-help-100.png" alt="Help" width="20" height="20">
-            </a></p>
+<div id="toolbar">
+                        <p><a href="Home,html"><img src="Images/logo.JPG" alt="logo" width="30" height= "30"/></a>
+                        <a href="Home.html">UAE Guide</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;En&emsp;
+                        <a href="Sign_Up.html">Sign Up</a>&emsp;<a href="Sign_In.html">Sign In</a>
+                        &emsp;<a href="Help.html"><img src="Images/icons8-help-100.png" alt="Help" width="20" height="20">
+                        </a></p>
+                </div>
+                <!--A tool bar will be on the top of the page and it will contain the sign in,
+                register and help icon-->
+                <div id="title">
+                        <h1>
+                                Wonder Across the 7 Emirates
+                        </h1>
+                </div>
+                <!--The title of our website-->
+                <div id="nav">
+                        <ul>
+                                <li><a href="Home.html">Home</a></li>
+                                <li><a href="AboutUAE.html">About UAE</a></li>
+                                <li><a href="Contact.html">Contact</a> </li>
+                        </ul></div>
+                <!--Navigation to navigate across the website-->
+                <br><br><br><br><br>
+
+<h2>Click here to Sign In</h2>
+<!--id01=signin , modal=form , model-content=content , container= fill, clearfix=final , signupbt=signinbt
+cancelbtn=canel-->
+
+<button onclick="document.getElementById('signin').style.display='block'" style="width:auto;">
+        Sign In</button>
+
+<div id="signin" class="form">
+    <span onclick="document.getElementById('signin').style.display='none'" class="close"
+    title="Close Modal">&times;</span>
+
+    <form id= "myForm" class="content" action="/action_page.php">
+        <div class="fill">
+            <h1>Sign In</h1>
+
+            <hr>
+            <p><label for="email"><b>Email</b></label>
+            <input type="text" id="email" placeholder="Enter Email" name="email" required></p>
+
+            <p><label for="psw"><b>Password</b></label>
+            <input type="password" id="password" placeholder="Enter Password" name="psw" required></p>
+
+            <p><label>
+                <input type="checkbox" id="remember" checked="checked" name="remember" style="margin-bottom:15px">
+                Remember me
+            </label></p>
+
+
+            <div class="final">
+                <p><button type="button" id="cancel" onclick="document.getElementById('signin').style.display='none'" class="cancel">Cancel</button>
+                <button type="submit" id="sign" class="signinbtn">Sign In</button></p>
+            </div>
         </div>
-        <!--A tool bar will be on the top of the page and it will contain the sign in,
-        register and help icon-->
-        <div id="Title">
-            <h1>
-                Wonder Across the 7 Emirates
-            </h1>
-        </div>
-        <!--The title of our website-->
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="AboutUAE.html">About UAE</a></li>
-                <li><a href="Contact.html">Contact</a> </li>
-            </ul>
-        </nav>
-
-    <form>
-<h1>Sign In</h1>
-
-<label><b>Email</b></label>
-<input type="text" placeholder="Enter Email" name="email" required>
-
-<br />   <br />
-<label><b>Password</b></label>
-<input type="password" placeholder="Enter Password" name="password" required>
-
-<br /> <br />     <br />
-
-<input type="submit" name="Sign In" value="Sign In" />
-     <br />
-<a href="Help.html"><p>Needs help?</p></a>
-<p>New to UAE Guide?</p>
-<a href="Sign_Up.html"><p>Sign Up Now</p></a>
-</form>
+    </form>
+     <div id = "helpText"></div>
+</div>
 
 <!-- a sign in form that contain a sgin in email and password also a button for help
 and sign up-->
 
+<br><br><br><br><br><br><br><br><br><br><br>
+                <div id="footer">
+                <p>&copy; 2022 Web Programming</p></div>
+
+
 
 </body>
-
 </html>
